@@ -6,22 +6,54 @@
   --min-title: rgba(157, 164, 189, 0.6);
 }
 
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: inherit;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--main-color);
 }
 
-header {
-  background-color: #000000;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.list {
-  list-style: none;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -43,6 +75,61 @@ header {
   line-height: calc(15 / 11);
   text-transform: uppercase;
   color: #303030;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  cursor: pointer;
+  color: var(--white-color);
+  padding: 12px 0;
+  min-width: 160px;
+}
+
+/* about */
+
+.about {
+  padding: 120px 0;
+  background-color: #303030;
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-text {
+  margin-bottom: 20px;
+}
+
+.about-img {
+  outline: 1px solid red;
+}
+
+header {
+  background-color: #000000;
+}
+
+.hero {
+  padding-top: 184px;
+  padding-bottom: 208px;
+}
+
+.hero-min-title {
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  margin-bottom: 20px;
 }
 
 .title {
@@ -115,6 +202,43 @@ header {
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
+}
+
+.price-title {
+  color: var(--title-color);
+  margin-bottom: 44px;
+}
+
+.price-inner {
+  margin-bottom: 44px;
+}
+
+.price-list {
+  padding: 30px 21px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.price-list-dark {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.price-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* advantages */
+
+.advantages-title {
+  margin-bottom: 20px;
+}
+
+.advantages-list-item {
+  padding: 20px 24px;
+  background-color: #f7f7f7;
+}
+
+.advantages-list-sum {
+  display: block;
+  margin-bottom: 6px;
 }
 
 /* патерн для приховання елментів .visually-hidden */
