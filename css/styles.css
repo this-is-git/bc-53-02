@@ -23,6 +23,10 @@ h6 {
   margin: 0;
 }
 
+textarea {
+  resize: none;
+}
+
 button {
   font: inherit;
   padding: 0;
@@ -469,6 +473,7 @@ header {
 
 .modal {
   max-width: 500px;
+  padding: 40px;
   width: 100%;
   min-height: 550px;
   background-color: #fff;
@@ -487,4 +492,95 @@ header {
   position: absolute;
   right: 24px;
   top: 24px;
+}
+
+.modal-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.modal-form-group > input {
+  border: 1px solid #000;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+
+.modal-form-group:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.modal-form-group > input:focus + .input-icon {
+  fill: #1f0cf6;
+}
+
+.modal-form-group > input:focus {
+  border-color: #1f0cf6;
+  outline: transparent;
+}
+
+/* .modal-form-group > input:focus ~ .modal-label {
+  top: -20px;
+  left: 0;
+  transform: scale(1.1);
+  color: #1f0cf6;
+} */
+
+.modal-form-group > input:not(:placeholder-shown) ~ .modal-label {
+  top: -20px;
+  left: 0;
+  transform: scale(1.1);
+  color: #1f0cf6;
+}
+
+.modal-label {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: top 250ms linear, left 250ms linear, transform 250ms linear;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.custom-checkbox-icon {
+  fill: currentColor;
+}
+
+.checkbox:checked + .checkbox-label > .custom-checkbox {
+  color: black;
+  background-color: #0666ff;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+  color: transparent;
+  transition: background-color 250ms linear, color 250ms linear 250ms;
 }
