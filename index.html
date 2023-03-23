@@ -20,9 +20,9 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -31,7 +31,14 @@
         <a class="header-logo" href="./index.html">
           <img src="./images/logo.png" alt="logo" width="69" />
         </a>
-        <nav>
+        <button
+          class="header-burger js-open-menu"
+          type="button"
+          aria-label="button for open mobile menu"
+        >
+          burger
+        </button>
+        <nav class="header-nav">
           <ul class="header-menu list">
             <li class="header-menu-item">
               <a class="menu-link link" href="">About</a>
@@ -49,12 +56,18 @@
         </nav>
         <div class="header-contact">
           <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="button animate__animated animate__bounce  animate__infinite infinite" type="button" data-modal-open>Online-booking</button>
+          <button
+            class="button animate__animated animate__bounce animate__infinite infinite"
+            type="button"
+            data-modal-open
+          >
+            Online-booking
+          </button>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <p class="hero-min-title min-title">A hair salon for men in Kyiv</p>
           <h1 class="hero-title">BarberShop</h1>
@@ -63,10 +76,10 @@
             and with style.
           </p>
         </div>
-      </section>
-      <section class="about section">
+      </section> -->
+      <!-- <section class="about section">
         <div class="container about-wrapper">
-          <ul class="about-list list" data-aos="fade-right">
+          <ul class="about-list list">
             <li class="about-list-item">
               <img
                 class="about-img"
@@ -101,8 +114,8 @@
             <button class="button" type="button">online-booking</button>
           </div>
         </div>
-      </section>
-      <section class="price section">
+      </section> -->
+      <!-- <section class="price section">
         <div class="container">
           <p class="price-min-title min-title">
             Spend your time with the best masters
@@ -159,24 +172,6 @@
       </section>
       <section class="advantages section">
         <div class="container">
-          <ul class="advantages-list">
-            <li class="advantages-list-item">
-              <span class="advantages-list-sum">600</span>
-              <p>Satisfied customers per day</p>
-            </li>
-            <li class="advantages-list-item">
-              <span class="advantages-list-sum">50</span>
-              <p>Awards for excellent service</p>
-            </li>
-            <li class="advantages-list-item">
-              <span class="advantages-list-sum">20</span>
-              <p>Kyiv’s best barbers</p>
-            </li>
-            <li class="advantages-list-item">
-              <span class="advantages-list-sum">100</span>
-              <p>Gifts for regular customers</p>
-            </li>
-          </ul>
           <div>
             <p class="min-title">Old traditional school</p>
             <h2 class="advantages-title title">Why people come to us?</h2>
@@ -186,8 +181,27 @@
             </p>
           </div>
         </div>
+        <ul class="advantages-list">
+          <li class="advantages-list-item">
+            <span class="advantages-list-sum">600</span>
+            <p>Satisfied customers per day</p>
+          </li>
+          <li class="advantages-list-item">
+            <span class="advantages-list-sum">50</span>
+            <p>Awards for excellent service</p>
+          </li>
+          <li class="advantages-list-item">
+            <span class="advantages-list-sum">20</span>
+            <p>Kyiv’s best barbers</p>
+          </li>
+          <li class="advantages-list-item">
+            <span class="advantages-list-sum">100</span>
+            <p>Gifts for regular customers</p>
+          </li>
+        </ul>
       </section>
-      <section>
+       <section>
+        <div class="container">
         <p>For true enjoyers of the atmosphere</p>
         <h2>Our barbers</h2>
         <ul class="barbers-list">
@@ -247,7 +261,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="barbers-list-item">
             <img src="./images/barber-2.jpg" alt="Michele Doe" width="370" />
             <h3>Michele Doe</h3>
             <p>Extreme Barber</p>
@@ -266,7 +280,45 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="barbers-list-item">
+            <img src="./images/barber-3.jpg" alt="Alan Black" width="370" />
+            <h3>Alan Black</h3>
+            <p>Extreme Barber</p>
+            <ul class="social-list">
+              <li class="social-list-item">
+                <a href="" class="social-list-link"></a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="social-list-link" ></a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="social-list-link"></a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="social-list-link"></a>
+              </li>
+            </ul>
+          </li>
+          <li class="barbers-list-item">
+            <img src="./images/barber-3.jpg" alt="Alan Black" width="370" />
+            <h3>Alan Black</h3>
+            <p>Extreme Barber</p>
+            <ul class="social-list">
+              <li class="social-list-item">
+                <a href="" class="social-list-link"></a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="social-list-link" ></a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="social-list-link"></a>
+              </li>
+              <li class="social-list-item">
+                <a href="" class="social-list-link"></a>
+              </li>
+            </ul>
+          </li>
+          <li class="barbers-list-item">
             <img src="./images/barber-3.jpg" alt="Alan Black" width="370" />
             <h3>Alan Black</h3>
             <p>Extreme Barber</p>
@@ -286,8 +338,9 @@
             </ul>
           </li>
         </ul>
-      </section>
-      <section>
+        </div>
+      </section> -->
+      <!-- <section>
         <h2 hidden>gallery</h2>
         <p>In Latin, "barba" means "beard"</p>
         <ul class="list">
@@ -312,9 +365,9 @@
           <p>Working hours</p>
           <p>Every day from <time>9:00</time> to <time>22:00</time></p>
         </address>
-      </section>
+      </section>  -->
     </main>
-    <footer>
+    <!-- <footer>
       <p>Copyright 2020</p>
       <ul class="list">
         <li>
@@ -326,8 +379,8 @@
           >
         </li>
       </ul>
-    </footer>
-    <div class="backdrop" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-closed" type="button" data-modal-close>closed</button>
         <form class="modal-form" name="call-back" novalidate>
@@ -375,8 +428,38 @@
     </div>
     <svg class="icon" width="64" height="64">
       <use href="./images/symbol-defs.svg#icon-astronaut"></use>
-    </svg>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </svg> -->
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu-btn-closed js-close-menu" type="button">
+        closed
+      </button>
+      <ul class="lists">
+        <li><a href="345435">About</a></li>
+        <li><a href="fdgdfgfd">Services and prices</a></li>
+        <li><a href="fdgfdgfd">Barbers</a></li>
+        <li><a href="dfssss">Contacts</a></li>
+      </ul>
+      <div class="mobile-menu-bottom">
+        <ul>
+          <li><a href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+        </ul>
+        <ul>
+          <li><a href="">a</a></li>
+          <li><a href="">b</a></li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

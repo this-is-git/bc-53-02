@@ -4,6 +4,9 @@
   --white-color: #fff;
   --title-color: #303030;
   --min-title: rgba(157, 164, 189, 0.6);
+  --phone: 447.98px;
+  --tablet: 719.98px;
+  --desctop: 1199.98px;
 }
 
 ul,
@@ -59,7 +62,7 @@ body.overflow {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -123,10 +126,19 @@ body.overflow {
 .header-wrappper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: none;
 }
 
 .header-logo {
   margin-right: 130px;
+}
+
+.header-burger {
+  color: #fff;
 }
 
 .header-menu {
@@ -138,6 +150,7 @@ body.overflow {
 }
 
 .header-contact {
+  display: none;
   margin-left: auto;
 }
 
@@ -179,7 +192,7 @@ body.overflow {
 }
 
 .about-list {
-  display: flex;
+  display: none;
   margin-right: 30px;
 }
 
@@ -222,8 +235,8 @@ header {
 
 .title {
   font-family: "Raleway", sans-serif;
-  font-size: 42px;
-  line-height: calc(49 / 42);
+  font-size: 28px;
+  line-height: calc(33 / 28);
   letter-spacing: 0.05em;
   color: var(--white-color);
 }
@@ -284,7 +297,7 @@ header {
 /* price */
 
 .price {
-  max-width: 1600px;
+  max-width: 480px;
   margin: 0 auto;
   background-color: #111319;
   background-image: url("../images/bg-price.png");
@@ -294,11 +307,9 @@ header {
 }
 
 .price-inner {
-  display: flex;
 }
 
 .price-list {
-  max-width: 570px;
   width: 100%;
 }
 
@@ -328,14 +339,14 @@ header {
 
 .price-inner {
   margin-bottom: 44px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .price-list {
   padding: 30px 21px;
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 .price-list-dark {
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  /* background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%); */
 }
 
 .price-list-item:not(:last-child) {
@@ -353,7 +364,7 @@ header {
 
 .advantages-list {
   display: flex;
-  max-width: 370px;
+
   flex-wrap: wrap;
   align-items: flex-start;
 }
@@ -361,7 +372,7 @@ header {
 .advantages-list-item {
   padding: 20px 24px;
   background-color: #f7f7f7;
-  width: 170px;
+  width: 193px;
   height: 133px;
   display: flex;
   flex-direction: column;
@@ -391,8 +402,8 @@ header {
 /* barbers */
 
 .barbers-list {
-  display: flex;
-  gap: 30px;
+  /* display: flex;
+  gap: 30px; */
 }
 
 .barbers-list-link {
@@ -583,4 +594,110 @@ header {
   height: 20px;
   color: transparent;
   transition: background-color 250ms linear, color 250ms linear 250ms;
+}
+
+/* mobile-menu */
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-100%);
+  padding: 118px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.557);
+  width: 100%;
+  height: 100vh;
+  transition: transform 250ms linear, opacity 250ms linear,
+    visibility 250ms linear;
+  overflow: auto;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-btn-closed {
+  position: absolute;
+  top: 48px;
+  right: 31px;
+}
+
+/* media */
+@media screen and (max-width: 719.98px) {
+  .about-text {
+    font-size: 16px;
+    line-height: calc(26 / 16);
+  }
+}
+
+@media screen and (min-width: 719.98px) {
+  .container {
+    max-width: var(--tablet);
+  }
+  .about {
+    padding: 80px 0;
+  }
+
+  .about-list {
+    display: flex;
+  }
+
+  .price-service,
+  .price-sum {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+
+  .advantages-list-item {
+    width: 210px;
+  }
+
+  .barbers-list {
+  }
+
+  .barbers-list-item {
+    width: 450px;
+  }
+
+  .header-contact,
+  .header-nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .container {
+    max-width: var(--desctop);
+  }
+  .title {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
+  .advantages-list-item {
+    width: 170px;
+  }
+
+  .barbers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .barbers-list-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (max-width: 1118.98px) {
+  .barbers-list-item:not(:last-child) {
+    margin-bottom: 64px;
+  }
 }
