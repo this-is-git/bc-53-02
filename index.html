@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-wrappper">
         <a class="header-logo" href="./index.html">
           <img src="./images/logo.png" alt="logo" width="69" />
@@ -65,19 +65,19 @@
           </button>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
-      <!-- <section class="hero">
+       <section class="hero">
         <div class="container">
-          <p class="hero-min-title min-title">A hair salon for men in Kyiv</p>
+          <!-- <p class="hero-min-title min-title">A hair salon for men in Kyiv</p>
           <h1 class="hero-title">BarberShop</h1>
           <p class="hero-descr">
             We are experts in trendy men’s haircuts. We work quickly, carefully
             and with style.
-          </p>
+          </p> -->
         </div>
-      </section> -->
-      <!-- <section class="about section">
+      </section> 
+       <!-- <section class="about section">
         <div class="container about-wrapper">
           <ul class="about-list list">
             <li class="about-list-item">
@@ -114,8 +114,8 @@
             <button class="button" type="button">online-booking</button>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="price section">
+      </section>  -->
+       <!-- <section class="price section">
         <div class="container">
           <p class="price-min-title min-title">
             Spend your time with the best masters
@@ -199,16 +199,62 @@
             <p>Gifts for regular customers</p>
           </li>
         </ul>
-      </section>
+      </section> -->
        <section>
         <div class="container">
         <p>For true enjoyers of the atmosphere</p>
         <h2>Our barbers</h2>
         <ul class="barbers-list">
-          <li class="barbers-list-item">
+          <!-- <li class="barbers-list-item">
             <a  class="barbers-list-link" href="barbers-list-link">
             <div class="barbers-list-box">
-              <img src="./images/barber-1.jpg" alt="John Smith" width="370" />
+              <img src="./images/mobile/barber-1-mobile.jpg" srcset="
+              ./images/barber-1.jpg 370w, 
+              ./images/tablet/barber-1-tablet.jpg 450w,
+               ./images/mobile/barber-1-mobile.jpg 418w,
+                ./images/barber-1@2x.jpg 740w,
+                ./images/tablet/barber-1-tablet@2x.jpg 900w,
+                 ./images/mobile/barber-1-mobile@2x.jpg 836w,
+              " 
+              sizes="(min-width:1200px) 370px, (min-width:768px) 450px, (max-width:767px) 418px"
+              alt="John Smith" width="370" />
+              <div class="overlay">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque, natus!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque, natus!
+                </p>
+              </div>
+            </div>
+            <h3>John Smith</h3>
+            <p>Extreme Barber</p>
+            <ul class="social-list">
+              <li class="social-list-item">
+                <a href="" class="social-list-link">
+                  <svg class="social-list-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </a>
+                </li>
+              </li> -->
+              <img src="./images/barber-1.jpg" srcset="./images/barber-1.jpg 1x, ./images/barber-1@2x.jpg 2x" alt="">
+           <li class="barbers-list-item">
+            <a  class="barbers-list-link" href="barbers-list-link">
+            <div class="barbers-list-box">
+              <picture>
+                <source srcset="./images/barber-1.jpg 1x, ./images/barber-1@2x.jpg 2x" media="(min-width: 1200px)">
+
+                <source srcset="./images/tablet/barber-1-tablet.jpg 1x, ./images/tablet/barber-1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+
+                <source srcset="./images/mobile/barber-1-mobile.jpg 1x, ./images/mobile/barber-1-mobile@2x.jpg 2x" media="(max-width: 767px)">
+
+                <img src="./images/mobile/barber-1-mobile.jpg" loading="lazy">
+              </picture>
+            
               <div class="overlay">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -262,7 +308,7 @@
             </ul>
           </li>
           <li class="barbers-list-item">
-            <img src="./images/barber-2.jpg" alt="Michele Doe" width="370" />
+            <img src="./images/barber-2.jpg" alt="Michele Doe" width="370 loading="lazy"" />
             <h3>Michele Doe</h3>
             <p>Extreme Barber</p>
             <ul class="social-list">
@@ -281,7 +327,8 @@
             </ul>
           </li>
           <li class="barbers-list-item">
-            <img src="./images/barber-3.jpg" alt="Alan Black" width="370" />
+            <img src="./images/barber-3.jpg" alt="Alan Black" width="370" loading="la
+            "/>
             <h3>Alan Black</h3>
             <p>Extreme Barber</p>
             <ul class="social-list">
@@ -299,57 +346,21 @@
               </li>
             </ul>
           </li>
-          <li class="barbers-list-item">
-            <img src="./images/barber-3.jpg" alt="Alan Black" width="370" />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
-            <ul class="social-list">
-              <li class="social-list-item">
-                <a href="" class="social-list-link"></a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-list-link" ></a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-list-link"></a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-list-link"></a>
-              </li>
-            </ul>
-          </li>
-          <li class="barbers-list-item">
-            <img src="./images/barber-3.jpg" alt="Alan Black" width="370" />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
-            <ul class="social-list">
-              <li class="social-list-item">
-                <a href="" class="social-list-link"></a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-list-link" ></a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-list-link"></a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-list-link"></a>
-              </li>
-            </ul>
-          </li>
+       
+         
         </ul>
         </div>
-      </section> -->
-      <!-- <section>
+      </section> 
+       <section>
         <h2 hidden>gallery</h2>
         <p>In Latin, "barba" means "beard"</p>
         <ul class="list">
-          <li><img src="./images/gallery-1.jpg" alt=" Beard trim" /></li>
-          <li><img src="./images/gallery-2.jpg" alt="Men’s haircut" /></li>
+          <li><img src="./images/gallery-1.jpg" alt=" Beard trim" loading="lazy"/></li>
+          <li><img src="./images/gallery-2.jpg" alt="Men’s haircut" loading="lazy"/></li>
           <li>
-            <img src="./images/gallery-3.jpg" alt="Camouflage of gray hair" />
+            <img src="./images/gallery-3.jpg" alt="Camouflage of gray hair"loading="lazy" />
           </li>
-          <li><img src="./images/gallery-4.jpg" alt="Mustache trim" /></li>
+          <li><img src="./images/gallery-4.jpg" alt="Mustache trim" loading="lazy"/></li>
         </ul>
       </section>
       <section>
@@ -451,6 +462,10 @@
           <li><a href="">b</a></li>
         </ul>
       </div>
+    </div>
+    <div class="img">
+      <img src="./images/barber-1@2x.jpg" alt="" width="370" />
+      <img src="./images/barber-1.jpg" alt="" width="370" />
     </div>
     <script
       defer
